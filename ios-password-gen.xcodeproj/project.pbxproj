@@ -58,13 +58,29 @@
 			children = (
 				E782B54827DF36BD00E67615 /* AppDelegate.swift */,
 				E782B54A27DF36BD00E67615 /* SceneDelegate.swift */,
-				E782B54C27DF36BD00E67615 /* ViewController.swift */,
-				E782B54E27DF36BD00E67615 /* Main.storyboard */,
+				E782B55D27DF914E00E67615 /* Controllers */,
+				E782B55C27DF914500E67615 /* Views */,
 				E782B55127DF36BF00E67615 /* Assets.xcassets */,
 				E782B55327DF36BF00E67615 /* LaunchScreen.storyboard */,
 				E782B55627DF36BF00E67615 /* Info.plist */,
 			);
 			path = "ios-password-gen";
+			sourceTree = "<group>";
+		};
+		E782B55C27DF914500E67615 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E782B54E27DF36BD00E67615 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E782B55D27DF914E00E67615 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E782B54C27DF36BD00E67615 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
