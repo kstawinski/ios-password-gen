@@ -137,10 +137,10 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sb-qc-MK8">
-                                                        <rect key="frame" x="298" y="20.666666666666629" width="32" height="34"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="16" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sb-qc-MK8">
+                                                        <rect key="frame" x="265" y="20.666666666666629" width="65" height="34"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="32" id="UAY-Z0-MA9"/>
+                                                            <constraint firstAttribute="width" constant="65" id="fUA-oy-GCd"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
@@ -176,27 +176,30 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RkE-98-tb9" secondAttribute="bottom" id="aCL-Xm-qGA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="gc0-eU-Skg" kind="presentation" identifier="showResultModal" id="Izm-Bb-FNn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="29.23076923076923" y="67.535545023696685"/>
         </scene>
-        <!--View Controller-->
+        <!--Preview View Controller-->
         <scene sceneID="VQF-fl-WnX">
             <objects>
-                <viewController id="gc0-eU-Skg" sceneMemberID="viewController">
+                <viewController id="gc0-eU-Skg" customClass="PreviewViewController" customModule="ios_password_gen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8KO-PV-CPm">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="163" translatesAutoresizingMaskIntoConstraints="NO" id="88J-cu-KQF">
-                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xN4-hs-yZr">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="146.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="143.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izo-Ne-4Nk">
-                                                <rect key="frame" x="119" y="58.999999999999993" width="152" height="28.666666666666664"/>
+                                                <rect key="frame" x="119" y="57.333333333333336" width="152" height="28.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -210,10 +213,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbx-4Q-rK2">
-                                        <rect key="frame" x="0.0" y="309.66666666666669" width="390" height="146.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="306.33333333333331" width="390" height="143.33333333333331"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password will be here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eE0-vw-aXc">
-                                                <rect key="frame" x="111.33333333333333" y="56.333333333333314" width="167.33333333333337" height="34"/>
+                                                <rect key="frame" x="111.33333333333333" y="54.666666666666686" width="167.33333333333337" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -225,10 +228,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnD-22-naG">
-                                        <rect key="frame" x="0.0" y="619.33333333333337" width="390" height="146.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="612.66666666666663" width="390" height="143.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJP-yI-fsH">
-                                                <rect key="frame" x="153.33333333333334" y="58" width="83.333333333333343" height="31"/>
+                                                <rect key="frame" x="153.33333333333334" y="56.333333333333371" width="83.333333333333343" height="31"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Try again"/>
                                             </button>
                                         </subviews>
@@ -261,6 +264,7 @@
                             <constraint firstItem="9cK-ap-0Uo" firstAttribute="bottom" secondItem="88J-cu-KQF" secondAttribute="bottom" id="xE7-qt-ckE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fmi-er-JWQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmE-1s-7OE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
