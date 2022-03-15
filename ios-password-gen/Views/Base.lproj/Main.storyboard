@@ -177,6 +177,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bigLettersSwitch" destination="M8j-pk-PLA" id="nCs-iW-4TS"/>
+                        <outlet property="lengthField" destination="4sb-qc-MK8" id="WUK-Js-yKA"/>
+                        <outlet property="numbersSwitch" destination="6xk-pX-RO5" id="P2m-dG-90v"/>
+                        <outlet property="smallLettersSwitch" destination="TAH-QF-hMa" id="Tfg-0l-EUZ"/>
+                        <outlet property="specialCharsSwitch" destination="vA5-f9-OCi" id="Zia-Fu-qTN"/>
+                        <outlet property="whiteCharsSwitch" destination="05V-hD-PQw" id="DwE-wi-lAN"/>
                         <segue destination="gc0-eU-Skg" kind="presentation" identifier="showResultModal" id="Izm-Bb-FNn"/>
                     </connections>
                 </viewController>
