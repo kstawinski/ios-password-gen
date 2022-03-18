@@ -14,6 +14,7 @@
 		E782B55227DF36BF00E67615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E782B55127DF36BF00E67615 /* Assets.xcassets */; };
 		E782B55527DF36BF00E67615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E782B55327DF36BF00E67615 /* LaunchScreen.storyboard */; };
 		E799D29227E0FBAF001C8509 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799D29127E0FBAF001C8509 /* PreviewViewController.swift */; };
+		E799D29427E0FD78001C8509 /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799D29327E0FD78001C8509 /* PasswordModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E782B55427DF36BF00E67615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E782B55627DF36BF00E67615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E799D29127E0FBAF001C8509 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		E799D29327E0FD78001C8509 /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +60,11 @@
 		E782B54727DF36BD00E67615 /* ios-password-gen */ = {
 			isa = PBXGroup;
 			children = (
-				E782B54827DF36BD00E67615 /* AppDelegate.swift */,
-				E782B54A27DF36BD00E67615 /* SceneDelegate.swift */,
+				E799D29527E0FD85001C8509 /* Models */,
 				E782B55D27DF914E00E67615 /* Controllers */,
 				E782B55C27DF914500E67615 /* Views */,
+				E782B54827DF36BD00E67615 /* AppDelegate.swift */,
+				E782B54A27DF36BD00E67615 /* SceneDelegate.swift */,
 				E782B55127DF36BF00E67615 /* Assets.xcassets */,
 				E782B55327DF36BF00E67615 /* LaunchScreen.storyboard */,
 				E782B55627DF36BF00E67615 /* Info.plist */,
@@ -84,6 +87,14 @@
 				E799D29127E0FBAF001C8509 /* PreviewViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E799D29527E0FD85001C8509 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E799D29327E0FD78001C8509 /* PasswordModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E799D29427E0FD78001C8509 /* PasswordModel.swift in Sources */,
 				E782B54D27DF36BD00E67615 /* ViewController.swift in Sources */,
 				E782B54927DF36BD00E67615 /* AppDelegate.swift in Sources */,
 				E782B54B27DF36BD00E67615 /* SceneDelegate.swift in Sources */,

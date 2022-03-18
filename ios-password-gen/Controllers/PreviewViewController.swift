@@ -9,13 +9,20 @@ import UIKit
 
 class PreviewViewController: UIViewController {
 
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    var passwordField: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        passwordTextField.text = passwordField
     }
     
-
+    @IBAction func handleTryAgainClick(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
