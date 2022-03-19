@@ -13,10 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var smallLettersSwitch: UISwitch!
     @IBOutlet weak var numbersSwitch: UISwitch!
     @IBOutlet weak var specialCharsSwitch: UISwitch!
-    @IBOutlet weak var lengthField: UITextField!
-    
+    @IBOutlet weak var lengthLabel: UILabel!
+
     var passwordModel = PasswordModel()
     var password: String?
+
+    @IBAction func handleLengthChange(_ sender: UISlider) {
+        let value = String(format: "%.0f", sender.value * 100)
+        lengthLabel.text = value
+    }
 
     @IBAction func handleCreateClick(_ sender: UIButton) {
         password = passwordModel.create(
@@ -24,9 +29,9 @@ class ViewController: UIViewController {
             smallLetters: smallLettersSwitch.isOn,
             numbers: numbersSwitch.isOn,
             specialChars: specialCharsSwitch.isOn,
-            length: Int(lengthField.text!)!
+            length: Int(lengthLabel.text!)!
         )
-        
+
         showResultModal()
     }
     

@@ -123,20 +123,23 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="DUa-M1-Qcf">
-                                                        <rect key="frame" x="156" y="30" width="174" height="30"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DUa-M1-Qcf">
+                                                        <rect key="frame" x="143" y="30" width="187" height="30"/>
                                                         <subviews>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FMs-Z1-PpX">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.16" minValue="0.050000000000000003" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FMs-Z1-PpX">
                                                                 <rect key="frame" x="-2" y="0.0" width="142" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="138" id="LmO-Ud-sUk"/>
                                                                     <constraint firstAttribute="height" constant="30" id="S1v-Pl-dPa"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="handleLengthChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="hhN-1G-EIO"/>
+                                                                </connections>
                                                             </slider>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEI-1A-hxA">
-                                                                <rect key="frame" x="149" y="0.0" width="25" height="30"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEI-1A-hxA">
+                                                                <rect key="frame" x="142" y="0.0" width="45" height="30"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="25" id="F6P-D7-rin"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="mZy-yp-EBZ"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
@@ -180,6 +183,7 @@
                     </view>
                     <connections>
                         <outlet property="bigLettersSwitch" destination="M8j-pk-PLA" id="nCs-iW-4TS"/>
+                        <outlet property="lengthLabel" destination="mEI-1A-hxA" id="6Fn-Ri-uc5"/>
                         <outlet property="numbersSwitch" destination="6xk-pX-RO5" id="P2m-dG-90v"/>
                         <outlet property="smallLettersSwitch" destination="TAH-QF-hMa" id="Tfg-0l-EUZ"/>
                         <outlet property="specialCharsSwitch" destination="vA5-f9-OCi" id="Zia-Fu-qTN"/>
